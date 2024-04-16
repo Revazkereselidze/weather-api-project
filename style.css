@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f5f7fa;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #3f9191, #fad648);
+}
+
+h1 {
+    text-align: center;
+    color: #140a0a;
+    font-size: 2em; /* Example size, adjust as needed */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input, button {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#weather {
+    width: 90%;
+    max-width: 550px;
+    background: rgba(100, 46, 185, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    background-color: #e8e8e8;
+}
+
+button {
+    width: 50%;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #6d5dfc, #6b8ddf);
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.11);
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+.weather-container {
+    text-align: center;
+    width: 100%;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+.weather-details p {
+    font-size: 26px;
+    color: #333;
+    line-height: 1.5;
+}
+
+button:hover {
+    background-color: #003f73;
+}
+
+.weather-container {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    transition: background-color 1s;
+}
+
+.weather-icon {
+    font-size: 72px;
+    animation: pulse 2s infinite;
+}
+
+
+.icon-clear { color: #ffd27d; }
+.icon-clouds { color: #b1b1b1; }
+.icon-rain, .icon-drizzle { color: #517ed1; }
+.icon-thunderstorm { color: #514d7e; }
+.icon-snow { color: #88c9f9; }
+.icon-mist, .icon-smoke, .icon-haze, .icon-dust, .icon-fog, .icon-sand, .icon-ash { color: #646464; }
+.icon-squall, .icon-tornado { color: #6b6b6b; }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}

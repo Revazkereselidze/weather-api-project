@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1>Ready to find out about the weather today?</h1>
+ <h1>Let's roll the dice</h1>
+
+    <div id="weather">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherDisplay" class="weather-container">
+            <div class="weather-condition">
+                <i class="fas fa-sun"></i> <span>Clear Skies</span>
+            </div>
+            <div class="weather-condition">
+                <i class="fas fa-cloud-rain"></i> <span>Rain</span>
+            </div>
+            <div class="weather-condition">
+                <i class="fas fa-cloud-rain"></i> <span>Drizzle</span>
+            </div>
+            <div class="weather-condition">
+                <i class="fas fa-bolt"></i> <span>Thunderstorm</span>
+            </div>
+            <div class="weather-condition">
+                <i class="fas fa-snowflake"></i> <span>Snow</span>
+            </div>
+            <div class="weather-condition">
+                <i class="fas fa-smog"></i> <span>Mist</span>
+            </div>
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
